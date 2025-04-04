@@ -1,0 +1,18 @@
+[gd_scene load_steps=3 format=3 uid="uid://dv8sqva8qk3a4"]
+
+[ext_resource type="Texture2D" uid="uid://0pd7kwmdmch3" path="res://assets/chars/HeroandOpponents_v1/Player/PNG/Idle/idle-1.png" id="1_4flbx"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_3vi8l"]
+radius = 45.0
+height = 338.0
+
+[node name="Player" type="CharacterBody2D"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CapsuleShape2D_3vi8l")
+debug_color = Color(0.921411, 6.24737e-05, 0.70002, 0.654902)
+
+[node name="Idle-1" type="Sprite2D" parent="."]
+position = Vector2(110, -4)
+scale = Vector2(6, 6)
+texture = ExtResource("1_4flbx")
